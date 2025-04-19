@@ -10,15 +10,15 @@ In order to make this project readily available for everyone I used popular modu
 
 ## Bill of Materials
 
-* ESP32-C3 SuperMini ([Aliexpress](https://www.aliexpress.com/item/1005007539612437.html))
-* TP4056 Lithium Battery Charger ([Aliexpress](https://www.aliexpress.com/item/1005007593596607.html))
-* Power Switch (link later)
-* Momentary Button (link later)
+* LILYGO® T7 S3 ESP32-S3 ([Aliexpress](https://www.aliexpress.com/item/1005004777561826.html), [LILYGO®](https://lilygo.cc/products/t7-s3?variant=42490159464629))
+* Momentary Button - 19mm ([Aliexpress](https://www.aliexpress.com/item/1005004407709401.html)) - IMPORTANT!!! Order the 19mm variant as the design is built around that size.
 * Lipo Battery 3.7mAh (dimensions later)
 
 Some of these components don't have a link yet because the 3D model is a WIP.
 
 Some soldering is required but nothing crazy and I will provide a detailed guide for it.
+
+The LILYGO board has a USB Type C port which can be used to program, and charge. It also has a battery charger module and port built in. Both the USB and power switch are exposed so they can be accessed once it's fully assembled.
 
 # Software
 
