@@ -11,7 +11,7 @@ In order to make this project readily available for everyone I used popular modu
 ## Bill of Materials
 
 * LILYGO® T7 S3 ESP32-S3 ([Aliexpress](https://www.aliexpress.com/item/1005004777561826.html), [LILYGO®](https://lilygo.cc/products/t7-s3?variant=42490159464629))
-* Momentary Button - 19mm ([Aliexpress](https://www.aliexpress.com/item/1005004407709401.html)) - IMPORTANT!!! Order the 19mm variant as the design is built around that size.
+* Momentary Button - 19mm, High head ([Aliexpress](https://www.aliexpress.com/item/1005004407709401.html)) - IMPORTANT!!! Order the 19mm variant as the design is built around that size.
 * Lipo Battery 3.7mAh (dimensions later)
 
 Some of these components don't have a link yet because the 3D model is a WIP.
