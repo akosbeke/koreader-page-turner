@@ -6,6 +6,8 @@
 #include <Preferences.h>
 #include <HTTPClient.h>
 
+#define LED_PIN 17
+
 Preferences preferences;
 
 // Connection settings
@@ -52,8 +54,6 @@ void startSoftAccessPoint(const char *ssid, const char *password, const IPAddres
 
   WiFi.softAPConfig(localIP, gatewayIP, subnetMask);
   WiFi.softAP(ssid, password, WIFI_CHANNEL, 0, MAX_CLIENTS);
-  // Set TX power (needed for Super Mini)
-  WiFi.setTxPower(WIFI_POWER_8_5dBm);
 
   // Disable AMPDU RX on the ESP32 WiFi to fix a bug on Android
   esp_wifi_stop();
@@ -76,9 +76,6 @@ void startWifiOrAp()
   WiFi.hostname(hostname);
   WiFi.begin(preferences.getString("wifi_ssid", "").c_str(),
              preferences.getString("wifi_password", "").c_str());
-
-  // Set TX power (needed for Super Mini)
-  WiFi.setTxPower(WIFI_POWER_8_5dBm);
 
   // Wait for connection
   Serial.println("Connecting to WiFi..");
@@ -331,6 +328,9 @@ void setup()
 {
   Serial.setTxBufferSize(1024);
   Serial.begin(115200);
+
+  pinMode(LED_PIN, OUTPUT);
+  digitalWrite(LED_PIN, HIGH);
 
   delay(1000); // Wait for the Serial to initialize
 

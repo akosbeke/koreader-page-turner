@@ -4,6 +4,8 @@ This project aims to give a hardware page turner for those using KOReader.
 
 It takes advantage of the KOReader HTTP inspector plugin.
 
+![Front view](/assets/front.jpg)
+
 # Hardware
 
 In order to make this project readily available for everyone I used popular modules and components.
@@ -12,9 +14,8 @@ In order to make this project readily available for everyone I used popular modu
 
 * LILYGO® T7 S3 ESP32-S3 ([Aliexpress](https://www.aliexpress.com/item/1005004777561826.html), [LILYGO®](https://lilygo.cc/products/t7-s3?variant=42490159464629))
 * Momentary Button - 19mm, High head ([Aliexpress](https://www.aliexpress.com/item/1005004407709401.html)) - IMPORTANT!!! Order the 19mm variant as the design is built around that size.
-* Lipo Battery 3.7mAh (dimensions later)
-
-Some of these components don't have a link yet because the 3D model is a WIP.
+* 103450 Lipo Battery 2000mAh ([Aliexpress](https://www.aliexpress.com/item/1005008129110763.html))
+* 3 x 'M3' self tapping screw 10mm ([Aliexpress](https://www.aliexpress.com/item/4000982209705.html))
 
 Some soldering is required but nothing crazy and I will provide a detailed guide for it.
 
@@ -46,7 +47,25 @@ You can later access the settings page by looking up the IP of the clicker on yo
 
 # 3D Case
 
-Work in progress, but eventually it should be a quick print (either at home or your local 3D printing shop) and the components should just click to place.
+Print it at home with any 3D printer. It's 3 parts:
+* Top (holds the button and the microctonroller)
+* Bottom (holds the battery)
+* Switch (extends the onboard switch so you can switch the device off when not used)
+
+You can find the STEP files under the `case` folder and the slice file on the [MakerWorld project](https://makerworld.com/en/models/1400135-koreader-page-turner-button#profileId-1451844)
+
+# Assemble
+
+The button should go in first. You have to turn the button itself as the nut cannot move.
+
+I used hot glue to fix the battery and the microcontroller in place. They in their respective cavities.
+
+Place the switch extender in between the top and bottom half (it goes in one correct way).
+
+Screw in the 3 self tapping screws.
+
+![Inside view](/assets/inside.jpg)
+![Top view](/assets/top.jpg)
 
 # Usage
 
