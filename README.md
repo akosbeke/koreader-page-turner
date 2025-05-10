@@ -47,7 +47,7 @@ You can later access the settings page by looking up the IP of the clicker on yo
 
 # 3D Case
 
-Print it at home with any 3D printer. It's 3 parts:
+Print it at home with any 3D printer. It consist of 3 parts:
 * Top (holds the button and the microctonroller)
 * Bottom (holds the battery)
 * Switch (extends the onboard switch so you can switch the device off when not used)
@@ -59,6 +59,9 @@ You can find the STEP files under the `case` folder and the slice file on the [M
 The button should go in first. You have to turn the button itself as the nut cannot move.
 
 I used hot glue to fix the battery and the microcontroller in place. They in their respective cavities.
+
+Solder `GPIO4` to one side of the switch and `GND` to the other. 
+If you have a battery like I did, you may need to switch the JST connector to the smaller one that came with the LILYGO microcontroller. It's just a matter of removing the shield tape, desolder, solder the new one, put back the tape.
 
 Place the switch extender in between the top and bottom half (it goes in one correct way).
 
