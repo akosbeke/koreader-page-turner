@@ -45,6 +45,10 @@ With that being said, you can change/build it yourself using Platform.io.
 
 You can later access the settings page by looking up the IP of the clicker on your router's settings page and open it in a browser.
 
+You should reserve the IP of your e-reader in your router settings so you don't have to change again.
+
+![Setup](/assets/setup.jpeg)
+
 # 3D Case
 
 Print it at home with any 3D printer. It consist of 3 parts:
@@ -69,6 +73,17 @@ Screw in the 3 self tapping screws.
 
 ![Inside view](/assets/inside.jpg)
 ![Top view](/assets/top.jpg)
+
+# KOReader
+
+The only setting in KOReader that you need to change is enabling the HTTP Inspector plugin.
+
+Go to `Tools/More Tools/KOReader HTTP inspectoar`.
+
+![Inspector](/assets/http_inspector.jpeg)
+
+I suggest to turn on the Auto start checkbox so you don't have to deal with it each time.
+The port can be whatever, but make sure you use the same on in the page turner setup process.
 
 # Usage
 
