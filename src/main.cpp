@@ -286,7 +286,7 @@ void handleMultiaction()
       // Next page on click
       turnPage(1);
     }
-    else if (duration < 2000)
+    else if (duration < 10000)
     {
       // Previous page on long click
       turnPage(-1);
